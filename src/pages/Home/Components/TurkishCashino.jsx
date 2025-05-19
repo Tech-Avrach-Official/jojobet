@@ -1,12 +1,4 @@
-
-
-
-
-
-
-// import { useState } from "react";
-// import * as PropTypes from "prop-types";
-// // Seat occupancy indicator component
+// import { useState, useEffect } from "react";
 // const SeatIndicator = ({ occupied }) => {
 //   return (
 //     <div
@@ -45,11 +37,10 @@
 //     >
 //       {/* Background Image */}
 //       <div
-//         className={`relative h-36 transition-all duration-300 ${
+//         className={`relative h-32 sm:h-36 transition-all duration-300 ${
 //           isHovered ? "blur-sm" : ""
 //         }`}
 //       >
-//         {/* Game image */}
 //         <img src={bgImage} alt={title} className="w-full h-full object-cover" />
 //         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
 
@@ -80,13 +71,13 @@
 //         </div>
 
 //         {/* Bet range */}
-//         <div className="absolute bottom-2 left-6 text-white font-bold text-sm">
+//         <div className="absolute bottom-2 left-2 sm:left-6 text-white font-bold text-xs sm:text-sm">
 //           {betRange}
 //         </div>
 //       </div>
 
 //       {/* Title - left aligned without background */}
-//       <div className="text-white py-1 px-2 text-left font-bold text-ms ">
+//       <div className="text-white py-1 px-2 text-left font-bold text-xs sm:text-sm truncate">
 //         {title}
 //       </div>
 
@@ -96,7 +87,7 @@
 //         ${isHovered || highlightCard ? "opacity-100" : "opacity-0 bg-black/50"} 
 //         ${isHovered ? "scale-100" : "scale-90"}`}
 //       >
-//         <button className="px-6 py-2 font-semibold text-sm text-white  bg-yellow-500 transition-all duration-300">
+//         <button className="px-4 sm:px-6 py-1.5 sm:py-2 font-semibold text-xs sm:text-sm text-white bg-yellow-500 transition-all duration-300">
 //           PLAY NOW!
 //         </button>
 //       </div>
@@ -104,17 +95,7 @@
 //   );
 // };
 
-// // Prop types for components 
-// CasinoCard.propTypes = {
-//   title: PropTypes.string,
-//   betRange: PropTypes.string,
-//   seats: PropTypes.arrayOf(PropTypes.bool),
-//   bgImage: PropTypes.string,
-//   hasEvolution: PropTypes.bool,
-//   isTableFull: PropTypes.bool,
-//   highlightCard: PropTypes.bool,
-// };
-
+// // Default props for CasinoCard
 // CasinoCard.defaultProps = {
 //   betRange: "",
 //   seats: [false, false, false, true, true, true],
@@ -124,120 +105,153 @@
 //   highlightCard: false,
 // };
 
-// SeatIndicator.propTypes = {
-//   occupied: PropTypes.bool,
-// };
-
-// SeatIndicator.defaultProps = {
-//   occupied: false,
-// };
-
 // // Main grid component
 // export default function TurkishCasinoGrid() {
+//   const [showAllGamesOnMobile, setShowAllGamesOnMobile] = useState(false);
+//   const [windowWidth, setWindowWidth] = useState(
+//     typeof window !== "undefined" ? window.innerWidth : 0
+//   );
+
+//   // Effect to handle window resize
+//   useEffect(() => {
+//     const handleResize = () => {
+//       setWindowWidth(window.innerWidth);
+//     };
+
+//     if (typeof window !== "undefined") {
+//       window.addEventListener("resize", handleResize);
+//       return () => window.removeEventListener("resize", handleResize);
+//     }
+//   }, []);
+
+//   // Desktop threshold - 1024px is standard lg breakpoint
+//   const isDesktop = windowWidth >= 1024;
+
 //   const casinoGames = [
 //     {
 //       title: "Jojo VIP BJ1",
 //       betRange: "₺500-2,000,000",
 //       seats: [false, false, false, true, true, true],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo VIP BJ2",
 //       betRange: "₺500-2,000,000",
 //       seats: [false, false, false, false, false, false],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack3",
 //       betRange: "₺200-2,000,000",
-//       highlightCard: true,
 //       seats: [true, true, true, true, true, true],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack4",
 //       betRange: "₺200-2,000,000",
 //       isTableFull: true,
 //       seats: [true, true, true, true, true, true],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack5",
 //       betRange: "₺200-2,000,000",
 //       seats: [false, false, true, true, true, false],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack6",
 //       betRange: "₺50-2,000,000",
 //       seats: [true, true, true, false, true, true],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack7",
 //       betRange: "₺50-2,000,000",
 //       seats: [true, false, true, true, true, true],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack8",
 //       betRange: "₺50-2,000,000",
 //       seats: [false, false, false, false, false, true],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack9",
 //       betRange: "₺50-2,000,000",
 //       seats: [false, false, true, true, false, false],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack10",
 //       betRange: "₺200-2,000,000",
 //       seats: [false, false, false, true, false, true],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack11",
 //       betRange: "₺100-2,000,000",
 //       seats: [false, false, true, false, true, false],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack12",
 //       betRange: "₺100-2,000,000",
 //       seats: [true, false, false, true, false, true],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojo Blackjack13",
 //       betRange: "₺50-2,000,000",
 //       seats: [false, true, false, true, true, false],
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //     {
 //       title: "Jojobet FP Blackjack",
 //       betRange: "",
 //       hasEvolution: true,
-//       bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+//       bgImage:
+//         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
 //     },
 //   ];
 
+//   // Display all games on desktop, but only initial games on mobile/tablet unless expanded
+//   const displayedGames =
+//     isDesktop || showAllGamesOnMobile ? casinoGames : casinoGames.slice(0, 4);
+//   const totalGames = casinoGames.length;
+//   const hiddenGames = totalGames - 4;
+
 //   return (
-//     <div className="h-auto lg:p-12 md:p-8  p-4 bg-[#191919] text-white ">
+//     <div className="h-auto lg:p-8 md:p-6 p-4 bg-[rgb(25,25,25)] text-white">
 //       {/* Header with "See all" button */}
-//       <div className="flex justify-between items-center mb-10">
-//         <h1 className="text-lg font-bold">TURKİSH CASİNO</h1>
-//         <button className="text-gray-400 hover:text-white flex items-center text-md font-semibold ">
+//       <div className="flex justify-between items-center mb-4">
+//         <h1 className="text-xl md:text-2xl font-bold">ENGLISH CASINO</h1>
+//         <button className="text-gray-400 hover:text-white flex items-center text-sm md:text-lg font-bold lg:block hidden">
 //           See all{" "}
-//           <span className="ml-1 bg-gray-800 px-1.5 py-0.5 rounded-sm">60</span>
+//           <span className="ml-1 text-sm md:text-lg font-bold px-1.5 py-0.5 rounded">
+//             {totalGames}
+//           </span>
 //           <span className="ml-1">›</span>
 //         </button>
 //       </div>
 
 //       {/* Casino card grid */}
-//       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-2">
-//         {casinoGames.map((game, index) => (
+//       <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-2 md:gap-3">
+//         {displayedGames.map((game, index) => (
 //           <CasinoCard
 //             key={index}
 //             title={game.title}
@@ -246,9 +260,22 @@
 //             bgImage={game.bgImage}
 //             isTableFull={game.isTableFull}
 //             hasEvolution={game.hasEvolution}
+//             highlightCard={game.highlightCard}
 //           />
 //         ))}
 //       </div>
+
+//       {/* Show more button - only visible on mobile/tablet when not showing all games */}
+//       {!isDesktop && !showAllGamesOnMobile && hiddenGames > 0 && (
+//         <div className="mt-6 flex justify-center">
+//           <button
+//             onClick={() => setShowAllGamesOnMobile(true)}
+//             className="px-8 sm:px-18 py-2 md:px-32 md:py-3 bg-transparent  border-yellow-500 border-2  hover:text-yellow-300   hover:border-yellow-300 text-yellow-500 font-semibold rounded-md transition-colors duration-300"
+//           >
+//             Show more ({hiddenGames})
+//           </button>
+//         </div>
+//       )}
 //     </div>
 //   );
 // }
@@ -267,12 +294,9 @@
 
 
 
+import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
-
-import { useState } from "react";
-import * as PropTypes from "prop-types";
-
-// Seat occupancy indicator component
 const SeatIndicator = ({ occupied }) => {
   return (
     <div
@@ -289,6 +313,10 @@ const SeatIndicator = ({ occupied }) => {
       </svg>
     </div>
   );
+};
+
+SeatIndicator.propTypes = {
+  occupied: PropTypes.bool.isRequired
 };
 
 // Casino card component
@@ -311,11 +339,10 @@ const CasinoCard = ({
     >
       {/* Background Image */}
       <div
-        className={`relative h-36 transition-all duration-300 ${
+        className={`relative h-32 sm:h-36 transition-all duration-300 ${
           isHovered ? "blur-sm" : ""
         }`}
       >
-        {/* Game image */}
         <img src={bgImage} alt={title} className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/60"></div>
 
@@ -346,13 +373,13 @@ const CasinoCard = ({
         </div>
 
         {/* Bet range */}
-        <div className="absolute bottom-2 left-6 text-white font-bold text-sm">
+        <div className="absolute bottom-2 left-2 sm:left-6 text-white font-bold text-xs sm:text-sm">
           {betRange}
         </div>
       </div>
 
       {/* Title - left aligned without background */}
-      <div className="text-white py-1 px-2 text-left font-bold text-ms ">
+      <div className="text-white py-1 px-2 text-left font-bold text-xs sm:text-sm truncate">
         {title}
       </div>
 
@@ -362,7 +389,7 @@ const CasinoCard = ({
         ${isHovered || highlightCard ? "opacity-100" : "opacity-0 bg-black/50"} 
         ${isHovered ? "scale-100" : "scale-90"}`}
       >
-        <button className="px-6 py-2 font-semibold text-sm text-white  bg-yellow-500 transition-all duration-300">
+        <button className="px-4 sm:px-6 py-1.5 sm:py-2 font-semibold text-xs sm:text-sm text-white bg-yellow-500 transition-all duration-300">
           PLAY NOW!
         </button>
       </div>
@@ -370,17 +397,18 @@ const CasinoCard = ({
   );
 };
 
-// Prop types for components 
+// PropTypes for CasinoCard
 CasinoCard.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   betRange: PropTypes.string,
   seats: PropTypes.arrayOf(PropTypes.bool),
   bgImage: PropTypes.string,
   hasEvolution: PropTypes.bool,
   isTableFull: PropTypes.bool,
-  highlightCard: PropTypes.bool,
+  highlightCard: PropTypes.bool
 };
 
+// Default props for CasinoCard
 CasinoCard.defaultProps = {
   betRange: "",
   seats: [false, false, false, true, true, true],
@@ -390,125 +418,152 @@ CasinoCard.defaultProps = {
   highlightCard: false,
 };
 
-SeatIndicator.propTypes = {
-  occupied: PropTypes.bool,
-};
-
-SeatIndicator.defaultProps = {
-  occupied: false,
-};
-
 // Main grid component
 export default function TurkishCasinoGrid() {
-  const [showAllGames, setShowAllGames] = useState(false);
-  
+  const [showAllGamesOnMobile, setShowAllGamesOnMobile] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(
+    typeof window !== "undefined" ? window.innerWidth : 0
+  );
+
+  // Effect to handle window resize
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []);
+
+  // Desktop threshold - 1024px is standard lg breakpoint
+  const isDesktop = windowWidth >= 1024;
+
   const casinoGames = [
     {
       title: "Jojo VIP BJ1",
       betRange: "₺500-2,000,000",
       seats: [false, false, false, true, true, true],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo VIP BJ2",
       betRange: "₺500-2,000,000",
       seats: [false, false, false, false, false, false],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack3",
       betRange: "₺200-2,000,000",
-  
       seats: [true, true, true, true, true, true],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack4",
       betRange: "₺200-2,000,000",
       isTableFull: true,
       seats: [true, true, true, true, true, true],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack5",
       betRange: "₺200-2,000,000",
       seats: [false, false, true, true, true, false],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack6",
       betRange: "₺50-2,000,000",
       seats: [true, true, true, false, true, true],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack7",
       betRange: "₺50-2,000,000",
       seats: [true, false, true, true, true, true],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack8",
       betRange: "₺50-2,000,000",
       seats: [false, false, false, false, false, true],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack9",
       betRange: "₺50-2,000,000",
       seats: [false, false, true, true, false, false],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack10",
       betRange: "₺200-2,000,000",
       seats: [false, false, false, true, false, true],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack11",
       betRange: "₺100-2,000,000",
       seats: [false, false, true, false, true, false],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack12",
       betRange: "₺100-2,000,000",
       seats: [true, false, false, true, false, true],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojo Blackjack13",
       betRange: "₺50-2,000,000",
       seats: [false, true, false, true, true, false],
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
     {
       title: "Jojobet FP Blackjack",
       betRange: "",
       hasEvolution: true,
-      bgImage: "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      bgImage:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
     },
   ];
 
-  // Display only 4 games on mobile and tablet if not showing all
-  const displayedGames = showAllGames ? casinoGames : casinoGames.slice(0, 4);
+  // Display all games on desktop, but only initial games on mobile/tablet unless expanded
+  const displayedGames =
+    isDesktop || showAllGamesOnMobile ? casinoGames : casinoGames.slice(0, 4);
   const totalGames = casinoGames.length;
+  const hiddenGames = totalGames - 4;
 
   return (
-    <div className="h-auto lg:p-12 md:p-8 p-4 bg-[#191919] text-white">
+    <div className="h-auto lg:p-8 md:p-6 p-4 bg-[rgb(25,25,25)] text-white">
       {/* Header with "See all" button */}
       <div className="flex justify-between items-center mb-4">
-        <h1 className="lg:text-lg  text-2xl font-bold">ENGLISH CASINO</h1>
-        <button className="text-gray-400 hover:text-white flex items-center text-md font-semibold">
+        <h1 className="text-xl md:text-2xl font-bold">ENGLISH CASINO</h1>
+        <button className="text-gray-400 hover:text-white flex items-center text-sm md:text-lg font-bold lg:block hidden">
           See all{" "}
-          <span className="ml-1 bg-gray-800 px-1.5 py-0.5 rounded-sm">{totalGames}</span>
+          <span className="ml-1 text-sm md:text-lg font-bold px-1.5 py-0.5 rounded">
+            {totalGames}
+          </span>
           <span className="ml-1">›</span>
         </button>
       </div>
 
       {/* Casino card grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-2">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-2 md:gap-3">
         {displayedGames.map((game, index) => (
           <CasinoCard
             key={index}
@@ -523,14 +578,14 @@ export default function TurkishCasinoGrid() {
         ))}
       </div>
 
-      {/* Show more button */}
-      {!showAllGames && (
-        <div className="mt-4 flex justify-center">
-          <button 
-            onClick={() => setShowAllGames(true)}
-            className="px-12 py-2 bg-yellow-500 hover:bg-yellow-600 text-black font-semibold rounded-sm"
+      {/* Show more button - only visible on mobile/tablet when not showing all games */}
+      {!isDesktop && !showAllGamesOnMobile && hiddenGames > 0 && (
+        <div className="mt-6 flex justify-center">
+          <button
+            onClick={() => setShowAllGamesOnMobile(true)}
+            className="px-8 sm:px-18 py-2 md:px-32 md:py-3 bg-transparent  border-yellow-500 border-2  hover:text-yellow-300   hover:border-yellow-300 text-yellow-500 font-semibold rounded-md transition-colors duration-300"
           >
-            Show more
+            Show more ({hiddenGames})
           </button>
         </div>
       )}
