@@ -87,7 +87,7 @@ CasinoCard.defaultProps = {
 };
 
 // Main grid component
-export default function TopCasino() {
+export default function JojobetOzel() {
   const [showAllGames, setShowAllGames] = useState(false);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -107,94 +107,6 @@ export default function TopCasino() {
 
   const casinoGames = [
     {
-      title: "Jojo Bonanza 1000",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Drop & Wins",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Jojo Rush 1000",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Drop & Wins",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Jackrabbit Jackpots",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: true,
-    },
-    {
-      title: "Jojobet Princess 1000",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Jojobet FP Blackjack",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Jojobet FP Roulette",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Big Bass Bonanza 1000",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "40 Extra Crown 6 Reels",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: true,
-    },
-    {
-      title: "Fruit Shop",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Reel Rush",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Gods of Troy Megaways",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
       title: "Sweet Bonanza™",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
@@ -203,7 +115,7 @@ export default function TopCasino() {
       isNew: false,
     },
     {
-      title: "Gates of Jojobet",
+      title: "Gates of Olympus™",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
       specialTag: "Drop & Wins",
@@ -211,7 +123,15 @@ export default function TopCasino() {
       isNew: false,
     },
     {
-      title: "Aviator",
+      title: "UFO Galaxy",
+      image:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      specialTag: "Evolution",
+      tagColor: "bg-yellow-500",
+      isNew: true,
+    },
+    {
+      title: "Galaxy",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
       specialTag: "Evolution",
@@ -226,12 +146,12 @@ export default function TopCasino() {
 
   return (
     <div className="h-auto lg:p-8 md:p-8 p-4 bg-[#191919] text-white">
-      <div className="flex justify-between items-center mb-4 ">
-        <h1 className="text-xl md:text-2xl font-bold ml-4">TOP 20 CASINO</h1>
-        <button className="text-gray-400 hover:text-white flex items-center text-sm md:text-lg font-semibold lg:block hidden">
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-xl md:text-2xl font-bold ml-4">JOJOBET ÖZEL</h1>
+        {/* <button className="text-gray-400 hover:text-white flex items-center text-sm md:text-lg font-bold lg:block hidden">
           View all 19
           <span className="ml-1">›</span>
-        </button>
+        </button> */}
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-x-3 gap-y-4">

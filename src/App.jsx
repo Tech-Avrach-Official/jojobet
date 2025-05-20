@@ -1,18 +1,14 @@
 
 import Navbar from "./component/Navbar";
-import TurkishCasino from "./pages/Home/Components/TurkishCashino" ;
-import TopCashino from "./pages/Home/Components/Top20Cashino" ;
-import Sports from "./pages/Sports/Sports";
-
-
+// import Sports from "./pages/Sports/Sports";
+import Home from "./pages/Home/Home";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Sports/>
-     {/* <TurkishCasino/>
-     <TopCashino/> */}
+      {/* <Sports/>  */}
+   <Home/>
     </div>
   )
 }

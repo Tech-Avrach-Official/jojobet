@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import PropTypes from "prop-types";
 const SpecialTag = ({ text, color }) => {
@@ -87,7 +88,7 @@ CasinoCard.defaultProps = {
 };
 
 // Main grid component
-export default function TopCasino() {
+export default function EGT_Digital() {
   const [showAllGames, setShowAllGames] = useState(false);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -107,114 +108,114 @@ export default function TopCasino() {
 
   const casinoGames = [
     {
-      title: "Jojo Bonanza 1000",
+      title: "VIP Flaming Hot Bell Style",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Drop & Wins",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Jojo Rush 1000",
+      title: "VIP Flaming Hot Extreme",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Drop & Wins",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Jackrabbit Jackpots",
+      title: "VIP 40 Super Hot Bell Style",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: true,
-    },
-    {
-      title: "Jojobet Princess 1000",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Jojobet FP Blackjack",
+      title: "VIP Burning Hot Bell Style",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Jojobet FP Roulette",
+      title: "VIP 40 Lucky King Extreme",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Big Bass Bonanza 1000",
+      title: "VIP Shining Crown Bell Style",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "40 Extra Crown 6 Reels",
+      title: "VIP 40 Zodiac Wheel Bell Style",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: true,
-    },
-    {
-      title: "Fruit Shop",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Reel Rush",
+      title: "VIP Zodiac Wheel Bell Style",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Gods of Troy Megaways",
+      title: "VIP 40 Shining Crown Bell Style",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Sweet Bonanza™",
+      title: "VIP Vampire Night Bell Style",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Drop & Wins",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Gates of Jojobet",
+      title: "VIP 40 Lucky King Bell Style",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Drop & Wins",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Aviator",
+      title: "VIP 5 Dazzling Hot Bell Style",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "EGT_Digital",
+      tagColor: "bg-yellow-500",
+      isNew: false,
+    },
+    {
+      title: "VIP 20 Super Hot Bell Style",
+      image:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      specialTag: "EGT_Digital",
+      tagColor: "bg-yellow-500",
+      isNew: false,
+    },
+    {
+      title: "VIP 40 Burning Hot Bell Style",
+      image:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      specialTag: "EGT_Digital",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
@@ -226,10 +227,10 @@ export default function TopCasino() {
 
   return (
     <div className="h-auto lg:p-8 md:p-8 p-4 bg-[#191919] text-white">
-      <div className="flex justify-between items-center mb-4 ">
-        <h1 className="text-xl md:text-2xl font-bold ml-4">TOP 20 CASINO</h1>
+      <div className="flex justify-between items-center mb-4">
+        <h1 className="text-xl md:text-2xl font-bold ml-4">EGT DIGITAL</h1>
         <button className="text-gray-400 hover:text-white flex items-center text-sm md:text-lg font-semibold lg:block hidden">
-          View all 19
+          View all 151
           <span className="ml-1">›</span>
         </button>
       </div>

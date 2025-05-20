@@ -87,7 +87,7 @@ CasinoCard.defaultProps = {
 };
 
 // Main grid component
-export default function TopCasino() {
+export default function Amusnet() {
   const [showAllGames, setShowAllGames] = useState(false);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -107,58 +107,90 @@ export default function TopCasino() {
 
   const casinoGames = [
     {
-      title: "Jojo Bonanza 1000",
+      title: "Jojo Space",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Drop & Wins",
+      specialTag: "Amusnet",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Jojo Rush 1000",
+      title: "Jojobet Space Roulette",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Drop & Wins",
+      specialTag: "Amusnet",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Jackrabbit Jackpots",
+      title: "Easter Frog Dice",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: true,
-    },
-    {
-      title: "Jojobet Princess 1000",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "Amusnet",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Jojobet FP Blackjack",
+      title: "40 Burning Hot",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "Amusnet",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Jojobet FP Roulette",
+      title: "Flaming Hot Extreme",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "Amusnet",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Big Bass Bonanza 1000",
+      title: "Shining crown",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "Amusnet",
+      tagColor: "bg-yellow-500",
+      isNew: false,
+    },
+    {
+      title: "40 Burning Hot 6 Reels",
+      image:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      specialTag: "Amusnet",
+      tagColor: "bg-yellow-500",
+      isNew: false,
+    },
+    {
+      title: "100 Super Hot",
+      image:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      specialTag: "Amusnet",
+      tagColor: "bg-yellow-500",
+      isNew: false,
+    },
+    {
+      title: "Hot Deco",
+      image:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      specialTag: "Amusnet",
+      tagColor: "bg-yellow-500",
+      isNew: false,
+    },
+    {
+      title: "100 Burning Hot",
+      image:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      specialTag: "Amusnet",
+      tagColor: "bg-yellow-500",
+      isNew: false,
+    },
+    {
+      title: "20 Golden Coins",
+      image:
+        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      specialTag: "Amusnet",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
@@ -166,57 +198,25 @@ export default function TopCasino() {
       title: "40 Extra Crown 6 Reels",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "Amusnet",
       tagColor: "bg-yellow-500",
       isNew: true,
     },
     {
-      title: "Fruit Shop",
+      title: "100 Extra Crown",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "Amusnet",
       tagColor: "bg-yellow-500",
-      isNew: false,
+      isNew: true,
     },
     {
-      title: "Reel Rush",
+      title: "Extra Crown Classic Dice",
       image:
         "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
+      specialTag: "Amusnet",
       tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Gods of Troy Megaways",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Sweet Bonanza™",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Drop & Wins",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Gates of Jojobet",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Drop & Wins",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Aviator",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Evolution",
-      tagColor: "bg-yellow-500",
-      isNew: false,
+      isNew: true,
     },
   ];
 
@@ -227,9 +227,9 @@ export default function TopCasino() {
   return (
     <div className="h-auto lg:p-8 md:p-8 p-4 bg-[#191919] text-white">
       <div className="flex justify-between items-center mb-4 ">
-        <h1 className="text-xl md:text-2xl font-bold ml-4">TOP 20 CASINO</h1>
+        <h1 className="text-xl md:text-2xl font-bold ml-4">AMUSNET</h1>
         <button className="text-gray-400 hover:text-white flex items-center text-sm md:text-lg font-semibold lg:block hidden">
-          View all 19
+          View all 488
           <span className="ml-1">›</span>
         </button>
       </div>
