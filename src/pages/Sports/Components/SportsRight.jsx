@@ -1,9 +1,61 @@
 import React from 'react'
+import { Ticket } from "lucide-react";
+import game from "../../../assets/Sports/game.gif"
 
 const SportsRight = () => {
   return (
-    <div className='w-full'>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, veniam, et labore illum maxime, voluptatem ducimus ex nobis repudiandae accusantium doloribus nemo temporibus est error hic repellat ea iusto beatae dolorem. Iure reiciendis ut laudantium laboriosam repellendus, laborum perferendis. Accusamus consequuntur dolorum distinctio, quasi natus nihil necessitatibus blanditiis itaque vitae cupiditate dignissimos velit vel cumque officia! Earum ea ad enim aliquam magni necessitatibus quos facere reprehenderit nostrum possimus natus dignissimos sequi qui quaerat dolores porro, praesentium aliquid eligendi repudiandae similique eaque. Ullam, nisi. Aut, illo, cum autem eligendi deserunt iste hic quas, pariatur repellendus enim debitis deleniti eaque et! Magni!\
+    <div className='w-full bg-[#1E1E20]'>
+      <div className="text-white w-full">
+      {/* Header */}
+      <div className="flex justify-between items-center bg-[#191919] py-2 px-2">
+        <div className="flex items-center justify-center gap-2">
+          <Ticket size={18} />
+          <h2 className="text-base font-medium">Betslip</h2>
+        </div>
+        <a
+          href="#"
+          className="text-xs text-gray-300 underline hover:no-underline transition"
+        >
+          Help
+        </a>
+      </div>
+
+      {/* Content */}
+      <div className="text-center py-10 px-4 text-gray-300 bg-[#242424] text-xs ">
+        <p>Your betslip is empty</p>
+        <p>
+          To place a bet,{" "}
+          <a href="#" className="underline">
+            register
+          </a>{" "}
+          or{" "}
+          <a href="#" className="underline">
+            login
+          </a>{" "}
+          and click on any price.
+        </p>
+      </div>
+    </div>
+    <div className='grid grid-cols-3 mt-2 gap-1'>
+      <div>
+        <img src={game} alt="" />
+      </div>
+      <div>
+        <img src={game} alt="" />
+      </div>
+      <div>
+        <img src={game} alt="" />
+      </div>
+      <div>
+        <img src={game} alt="" />
+      </div>
+      <div>
+        <img src={game} alt="" />
+      </div>
+      <div>
+        <img src={game} alt="" />
+      </div>
+    </div>
     </div>
   )
 }

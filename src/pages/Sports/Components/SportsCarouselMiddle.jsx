@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -8,55 +8,67 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import dummy from '../../../assets/Sports/dummy.png';
 
 const slides = [
-  {
-   image :  dummy,
-  },
-  {
-   image :  dummy,
-  },
-  {
-   image :  dummy,
-  },
-  {
-   image :  dummy,
-  },
-  {
-   image :  dummy,
-  },
+  { id: 1, image: dummy },
+  { id: 2, image: dummy },
+  { id: 3, image: dummy },
+  { id: 4, image: dummy },
+  { id: 5, image: dummy },
 ];
 
 const SportsCarouselMiddle = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
-    <div className="relative w-full overflow-hidden">
+    <div className="relative w-full mt-3 overflow-hidden">
+      {/* Custom Buttons */}
+      <button
+        ref={prevRef}
+        className="absolute left-2 top-1/2 z-10 -translate-y-1/2"
+      >
+        <ChevronLeft size={34} className='font-extrabold text-black' />
+      </button>
+      <button
+        ref={nextRef}
+        className="absolute right-2 top-1/2 z-10 -translate-y-1/2"
+      >
+        <ChevronRight size={34} className='font-extrabold text-black' />
+      </button>
+
       <Swiper
-        modules={[Autoplay, Pagination, Navigation]}
+        modules={[Autoplay, Navigation]}
         autoplay={{ delay: 3000 }}
-        pagination={{ clickable: true }}
-        navigation={{
-          prevEl: '.swiper-button-prev',
-          nextEl: '.swiper-button-next',
-        }}
         loop={true}
-        className="w-full"
+        onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
+        navigation={{
+          prevEl: prevRef.current,
+          nextEl: nextRef.current,
+        }}
+        onBeforeInit={(swiper) => {
+          swiper.params.navigation.prevEl = prevRef.current;
+          swiper.params.navigation.nextEl = nextRef.current;
+        }}
+        className="w-full relative"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div >
-             <img src={slide.image} alt="" />
-            </div>
+            <img src={slide.image} alt={`Slide ${slide.id}`} />
           </SwiperSlide>
         ))}
-
-        {/* Prev/Next Buttons */}
-        <button className="swiper-button-prev absolute left-2 top-1/2 z-10 -translate-y-1/2 bg-black/30 p-2 rounded-full text-white">
-          {/* <ChevronLeft size={24} /> */}
-        </button>
-        <button className="swiper-button-next absolute right-2 top-1/2 z-10 -translate-y-1/2 bg-black/30 p-2 rounded-full text-white">
-          <ChevronRight size={24} />
-        </button>
       </Swiper>
 
-      {/* Swiper pagination is automatically styled by Swiper */}
+      {/* Custom Pagination Dots */}
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
+        {slides.map((_, idx) => (
+          <div
+            key={idx}
+            className={`w-2 h-2 rounded-full ${
+              idx === activeIndex ? 'bg-gray-400 scale-150' : 'bg-gray-300'
+            }`}
+          ></div>
+        ))}
+      </div>
     </div>
   );
 };
