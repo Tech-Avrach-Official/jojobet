@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import SportsCarouselName from './SportsCarouselName';
+import LiveContent from './LiveContent';
 
 const LiveUpcoming = () => {
      const [activeTab, setActiveTab] = useState("live");
   return (
-    <div className="w-full">
+    <div className="w-full ">
       {/* Live Button */}
       <div className='flex w-full overflow-hidden'>
         <div
@@ -45,7 +46,10 @@ const LiveUpcoming = () => {
 
       <div>
         {
-          activeTab === "live" ? <div>Live</div> : <div>Upcoming</div>
+          activeTab === "live" ? 
+          <div>
+            <LiveContent/>
+          </div> : <div>Upcoming</div>
         }
       </div>
     </div>

@@ -1,10 +1,12 @@
 
+import Navbar from '@/component/Navbar'
 import SportsUi from './Components/SportsUi'
 
 const Sports = () => {
   return (
     <div>
-        <SportsUi/>
+      <Navbar/>
+      <SportsUi/>
     </div>
   )
 }

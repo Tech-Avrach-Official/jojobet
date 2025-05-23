@@ -1,63 +1,78 @@
-import React from 'react'
+import React from "react";
 import { Ticket } from "lucide-react";
-import game from "../../../assets/Sports/game.gif"
+import game from "../../../assets/Sports/game.gif";
+import ads from "../../../assets/Sports/ads.gif";
+import invest from "../../../assets/Sports/invest.jpg";
 
 const SportsRight = () => {
   return (
-    <div className='w-full bg-[#1E1E20]'>
+    <div className="w-full bg-[#1E1E20]">
       <div className="text-white w-full">
-      {/* Header */}
-      <div className="flex justify-between items-center bg-[#191919] py-2 px-2">
-        <div className="flex items-center justify-center gap-2">
-          <Ticket size={18} />
-          <h2 className="text-base font-medium">Betslip</h2>
+        {/* Header */}
+        <div className="flex justify-between items-center bg-[#191919] py-2 px-2">
+          <div className="flex items-center justify-center gap-2">
+            <Ticket size={18} />
+            <h2 className="text-base font-medium">Betslip</h2>
+          </div>
+          <a
+            href="#"
+            className="text-xs text-gray-300 underline hover:no-underline transition"
+          >
+            Help
+          </a>
         </div>
-        <a
-          href="#"
-          className="text-xs text-gray-300 underline hover:no-underline transition"
-        >
-          Help
-        </a>
-      </div>
 
-      {/* Content */}
-      <div className="text-center py-10 px-4 text-gray-300 bg-[#242424] text-xs ">
-        <p>Your betslip is empty</p>
-        <p>
-          To place a bet,{" "}
-          <a href="#" className="underline">
-            register
-          </a>{" "}
-          or{" "}
-          <a href="#" className="underline">
-            login
-          </a>{" "}
-          and click on any price.
-        </p>
+        {/* Content */}
+        <div className="text-center py-10 px-4 text-gray-300 bg-[#242424] text-xs ">
+          <p>Your betslip is empty</p>
+          <p>
+            To place a bet,{" "}
+            <a href="#" className="underline">
+              register
+            </a>{" "}
+            or{" "}
+            <a href="#" className="underline">
+              login
+            </a>{" "}
+            and click on any price.
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col gap-1">
+        <div className="grid grid-cols-3 mt-2 gap-1">
+        <div>
+          <img src={game} alt="" />
+        </div>
+        <div>
+          <img src={game} alt="" />
+        </div>
+        <div>
+          <img src={game} alt="" />
+        </div>
+        <div>
+          <img src={game} alt="" />
+        </div>
+        <div>
+          <img src={game} alt="" />
+        </div>
+        <div>
+          <img src={game} alt="" />
+        </div>
+      </div>
+      <div>
+        <img src={ads} alt="" />
+      </div>
+      <div className="flex flex-col gap-1">
+        <img src={invest} alt="" />
+        <img src={invest} alt="" />
+        <img src={invest} alt="" />
+        <img src={invest} alt="" />
+        <img src={invest} alt="" />
+        <img src={invest} alt="" />
+      </div>
       </div>
     </div>
-    <div className='grid grid-cols-3 mt-2 gap-1'>
-      <div>
-        <img src={game} alt="" />
-      </div>
-      <div>
-        <img src={game} alt="" />
-      </div>
-      <div>
-        <img src={game} alt="" />
-      </div>
-      <div>
-        <img src={game} alt="" />
-      </div>
-      <div>
-        <img src={game} alt="" />
-      </div>
-      <div>
-        <img src={game} alt="" />
-      </div>
-    </div>
-    </div>
-  )
-}
+  );
+};
 
-export default SportsRight
+export default SportsRight;
