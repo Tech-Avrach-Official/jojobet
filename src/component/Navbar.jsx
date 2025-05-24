@@ -2,7 +2,6 @@ import { FaAndroid, FaApple } from "react-icons/fa";
 import { MdLanguage } from "react-icons/md";
 import { Link } from "react-router-dom";
 import logo from "../assets/download.svg";
-
 export default function Navbar() {
   const navLinks = [
     { name: "Price Boost", path: "/price-boost" },
@@ -36,16 +35,12 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Auth buttons */}
-          <div className="flex flex-row space-x-4 px-4 border-r-2 border-gray-600">
-            <Link to="/register">
-              <button className="bg-[rgb(249,196,8)] text-[rgb(35,66,9)] font-semibold px-3 py-1 rounded">
-                REGISTER
-              </button>
-            </Link>
-            <Link to="/login">
-              <button className="text-white font-bold">LOG IN</button>
-            </Link>
+          <div className="flex flex-row space-x-4 px-4 border-r-2 border-gray-600  ">
+            {" "}
+            <button className="bg-[rgb(249,196,8)] text-[rgb(35,66,9)] font-semibold px-3 py-1 rounded">
+              REGISTER
+            </button>
+            <button className="text-white font-bold">LOG IN</button>
           </div>
 
           {/* Language icon */}
