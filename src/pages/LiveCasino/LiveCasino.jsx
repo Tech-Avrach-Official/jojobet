@@ -12,9 +12,13 @@ import LiveGameCarousel from "../LiveGames/Components/LiveGameCarousel"
 const LiveCashino = () => {
   return (
     <div>
+<<<<<<< Updated upstream
     <div className="px-8 bg-[#1e1e20]">
       <Navbar/>
       <LiveGameCarousel/>
+=======
+    <div className="lg:px-8  bg-[#1e1e20]">
+>>>>>>> Stashed changes
     <GamingLayout/>
   <PokerKlas/>
   <TurkishCasinoGrid/>

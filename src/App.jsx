@@ -4,13 +4,18 @@ import { BrowserRouter } from "react-router-dom";
 // import Home from "./pages/Home/Home";
 // import PromotionsGrid from "./pages/Promotion/Components/CardGrid";
 import AllRoutes from "./routes/routes"; 
-import LiveCashino from "./pages/LiveCasino/LiveCasino"
+import Casino from "./pages/Casino/Casino"
 
 const App = () => {
   return (
    <BrowserRouter>
+<<<<<<< Updated upstream
    <AllRoutes/>
 
+=======
+   {/* <AllRoutes/> */}
+    <Casino/>
+>>>>>>> Stashed changes
    </BrowserRouter>
   );
 };
