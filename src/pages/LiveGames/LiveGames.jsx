@@ -9,7 +9,7 @@ const LiveGames = () => {
     <div>
         <Navbar/>
         <LiveGameCarousel/>
-        <LiveGameSmallCarousel/>
+        {/* <LiveGameSmallCarousel/> */}
         <GameGrid />
     </div>
   )

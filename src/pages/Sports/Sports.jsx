@@ -14,7 +14,7 @@ const Sports = () => {
   return (
     <div>
       <div className='hidden lg:block'>
-        <Navbar/>
+      <Navbar/>
       <SportsUi/>
       <JojobetOzel />
       <TurkishCasinoGrid />

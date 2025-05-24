@@ -9,6 +9,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import img1 from '../../../assets/LiveGames/img1.png';
 import img2 from '../../../assets/LiveGames/img2.png';
 import img3 from '../../../assets/LiveGames/img3.webp';
+import LiveGameSmallCarousel from './LiveGameSmallCarousel';
 
 const slides = [
   { id: 1, image: img1 },
@@ -51,14 +52,21 @@ const LiveGameCarousel = () => {
           swiper.params.navigation.prevEl = prevRef.current;
           swiper.params.navigation.nextEl = nextRef.current;
         }}
-        className="w-full h-[20rem] relative"
+        className="w-full  h-[20rem] relative"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
             <img src={slide.image} className="w-full h-full object-cover" alt={`Slide ${slide.id}`} />
           </SwiperSlide>
         ))}
+      <div className='absolute bottom-3 right-0 w-[50%] z-50'>
+        <LiveGameSmallCarousel/>
+      </div>
+      <div className='absolute bottom-0 z-10 w-full bg-[#525252a4] h-[0.75rem]'>
+
+      </div>
       </Swiper>
+
 
       {/* Custom Pagination Dots */}
       {/* <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
