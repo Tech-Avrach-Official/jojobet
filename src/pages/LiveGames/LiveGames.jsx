@@ -10,7 +10,7 @@ const LiveGames = () => {
     <div>
         <Navbar/>
         <LiveGameCarousel/>
-        {/* <LiveGameSmallCarousel/> */}
+        <LiveGameSmallCarousel/>
         <GameGrid />
         <Footer />
     </div>

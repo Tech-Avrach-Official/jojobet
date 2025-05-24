@@ -9,6 +9,7 @@ import Tournaments from '@/pages/Tournaments/Tournaments'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import LiveSports from '@/pages/LiveSports/LiveSports'
+import LiveCashino from '@/pages/LiveCasino/LiveCasino'
 
 const AllRoutes = () => {
   return (
@@ -29,7 +30,7 @@ const AllRoutes = () => {
         <Route path='/game-screen' element={<GameScreen/>} />
         <Route path='/sports' element={<Sports/>} />
         <Route path="/live-sports" element={<LiveSports/>} />
-
+        <Route path='/live-casino' element={<LiveCashino/>} />
     </Routes>
     </>
     

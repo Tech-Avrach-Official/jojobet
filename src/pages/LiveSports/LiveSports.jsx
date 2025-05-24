@@ -8,11 +8,13 @@ import SportsCarouselNameMob from './conponents/mobile/SportsCrouselMobile';
 import TopSectionMobi from './conponents/mobile/TopSectionMobi';
 import { Link } from 'react-router-dom';
 
+
 const LiveSports = () => {
     return (
         <div>
         <div className="min-h-screen w-full bg-[#1E1E20] text-white md:block hidden">
             <Navbar />
+
             <div className="flex flex-col lg:flex-row w-full h-auto lg:gap-2">
                 {/* Left section */}
                 <div className="lg:w-[80%] w-full">

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import TournamentCard from './components/TournamentCard';
+import Navbar from '@/component/Navbar';
+import LiveGameCarousel from '../LiveGames/Components/LiveGameCarousel';
 
 const Tournaments = () => {
   const [activeButton, setActiveButton] = useState('All');
@@ -8,7 +10,11 @@ const Tournaments = () => {
   const shouldShowTournaments = activeButton === 'All' || activeButton === 'Scheduled' || activeButton === 'Finished';
 
   return (
-    <div className="bg-gray-900 min-h-screen text-white">
+    <>
+        <Navbar/>
+        <LiveGameCarousel/>    
+
+        <div className="bg-gray-900 min-h-screen text-white">
       {/* Header and Buttons */}
       <div className="flex justify-between items-center p-12">
         <h1 className="text-xl font-semibold">Tournaments</h1>
@@ -39,6 +45,7 @@ const Tournaments = () => {
         )}
       </div>
     </div>
+    </>
   );
 };
 

@@ -9,8 +9,7 @@ import LiveCashino from "./pages/LiveCasino/LiveCasino"
 const App = () => {
   return (
    <BrowserRouter>
-   {/* <AllRoutes/> */}
-     <LiveCashino/>
+   <AllRoutes/>
 
    </BrowserRouter>
   );
