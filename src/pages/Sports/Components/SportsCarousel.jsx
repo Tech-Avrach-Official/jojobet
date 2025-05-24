@@ -99,13 +99,13 @@ const SportsCarousel = () => {
             <SwiperSlide key={index} style={{ width: "auto" }}>
               <div className="group flex flex-col items-center cursor-pointer hover:bg-[#191919] text-sm px-2 py-2 text-gray-700">
                 <div className="relative">
-                  <p className="text-lg transform transition-transform duration-200 group-hover:scale-125 group-hover:rotate-12">{sport.icon}</p>
+                  <p className="text-base md:text-lg transform transition-transform duration-200 group-hover:scale-125 group-hover:rotate-12">{sport.icon}</p>
                   <span className="absolute top-[-5px] right-[-10px] text-[9px] font-bold bg-black w-4 h-4 rounded-full flex items-center justify-center text-[#588036]">
                     17
                   </span>
                 </div>
 
-                <span className="text-xs text-[#588036] font-medium whitespace-nowrap">
+                <span className="text-[10px] md:text-xs text-[#588036] font-medium whitespace-nowrap">
                   {sport.name}
                 </span>
               </div>

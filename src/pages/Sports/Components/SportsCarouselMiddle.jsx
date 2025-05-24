@@ -21,7 +21,7 @@ const SportsCarouselMiddle = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="relative w-full mt-3 overflow-hidden">
+    <div className="relative w-full mt-2 md:mt-3 overflow-hidden">
       {/* Custom Buttons */}
       <button
         ref={prevRef}
@@ -49,11 +49,11 @@ const SportsCarouselMiddle = () => {
           swiper.params.navigation.prevEl = prevRef.current;
           swiper.params.navigation.nextEl = nextRef.current;
         }}
-        className="w-full relative"
+        className="w-full h-[13rem] md:h-full relative"
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <img src={slide.image} alt={`Slide ${slide.id}`} />
+            <img src={slide.image} className='w-full h-full object-cover' alt={`Slide ${slide.id}`} />
           </SwiperSlide>
         ))}
       </Swiper>
@@ -63,7 +63,7 @@ const SportsCarouselMiddle = () => {
         {slides.map((_, idx) => (
           <div
             key={idx}
-            className={`w-2 h-2 rounded-full ${
+            className={`w-1 h-1 md:w-2 md:h-2 rounded-full ${
               idx === activeIndex ? 'bg-gray-400 scale-150' : 'bg-gray-300'
             }`}
           ></div>
