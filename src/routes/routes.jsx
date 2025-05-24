@@ -11,8 +11,8 @@ import { Route, Routes } from 'react-router-dom'
 const AllRoutes = () => {
   return (
     <>
-    <Navbar />
-    <LiveGameCarousel />
+    {/* <Navbar />
+    <LiveGameCarousel /> */}
     <Routes>
         {/* <Route path='/' element={<h1>Home</h1>} /> */}
         <Route path='/' element={<Sports/>} />
