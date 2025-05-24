@@ -5,7 +5,7 @@ import SportsRight from './SportsRight'
 
 const SportsUi = () => {
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full bg-[#1E1E20]'>
        <div className='w-full flex'>
          <div className='w-[17%]'>
             <SportsLeft/>

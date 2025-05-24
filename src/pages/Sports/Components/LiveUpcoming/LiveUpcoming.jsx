@@ -49,6 +49,7 @@ const LiveUpcoming = () => {
           activeTab === "live" ? 
           <div>
             <LiveContent/>
+            <LiveContent/>
           </div> : <div>Upcoming</div>
         }
       </div>
