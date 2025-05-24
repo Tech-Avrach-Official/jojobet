@@ -21,20 +21,20 @@ const GamingLayout = () => {
   ];
 
   return (
-    <div className=" h-auto py-28 px-10 relative overflow-hidden" style={{ backgroundColor: '#1e1e20' }}>
+    <div className=" h-auto py-24 px-10 relative overflow-hidden" style={{ backgroundColor: '#1e1e20' }}>
       {/* Background Images with Blur */}
       <div className="absolute inset-0">
-        <div className="w-full m-8 flex item-center  overflow-hidden">
+        <div className="w-full m-10 flex item-center  overflow-hidden">
           {games.map((game, index) => (
             <div 
               key={index} 
               className="flex-2 item-center h-auto"
-              style={{ minWidth: '400px' }}
+              style={{ minWidth: '300px' }}
             >
               <img 
                 src={game.image} 
                 alt={game.title}
-                className="w-full h-full object-contain"
+                className="w-full h-3/4 object-contain"
                 style={{ filter: 'blur(1px)' }}
               />
             </div>
