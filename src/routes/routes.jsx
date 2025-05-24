@@ -31,6 +31,7 @@ const AllRoutes = () => {
         <Route path='/sports' element={<Sports/>} />
         <Route path="/live-sports" element={<LiveSports/>} />
         <Route path='/live-casino' element={<LiveCashino/>} />
+        <Route path='/live-lotto' element={<GameScreen/>} />
     </Routes>
     </>
     
