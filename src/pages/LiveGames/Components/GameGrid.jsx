@@ -226,7 +226,7 @@ export default function GameGrid() {
     isDesktop || showAllGames ? casinoGames : casinoGames.slice(0, 4);
 
   return (
-    <div className="h-auto lg:p-8 md:p-8 p-4 bg-[#191919] text-white">
+    <div className="h-auto lg:p-8 md:p-8 p-4 bg-[#1e1e20] text-white">
       <div className="flex justify-between items-center mb-4 ">
         {/* <h1 className="text-xl md:text-2xl font-bold ml-4">AMUSNET</h1>
         <button className="text-gray-400 hover:text-white flex items-center text-sm md:text-lg font-semibold lg:block hidden">

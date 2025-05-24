@@ -226,7 +226,7 @@ export default function Pregamatic() {
     isDesktop || showAllGames ? casinoGames : casinoGames.slice(0, 4);
 
   return (
-    <div className="h-auto lg:p-8 md:p-8 p-4 bg-[#191919] text-white">
+    <div className="h-auto lg:p-8 md:p-8 p-4 bg-[#1e1e20] text-white">
       <div className="flex justify-between items-center mb-4 ml-4">
         <h1 className="text-xl md:text-2xl font-bold">PRAGMATIC
 </h1>

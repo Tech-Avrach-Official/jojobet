@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { Link } from "react-router-dom";
 const SpecialTag = ({ text, color }) => {
   return (
     <div
@@ -179,7 +179,7 @@ const generateRandomNumbers = () => {
 };
 
 // Main grid component
-export default function TopCasino() {
+export default function PragmaticLive() {
   const [showAllGames, setShowAllGames] = useState(false);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -375,8 +375,10 @@ export default function TopCasino() {
   return (
     <div className="h-auto lg:p-8 md:p-8 p-4 bg-[#1e1e20] text-white">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-xl md:text-2xl font-bold ml-4">TOP 20 CANLI CASINO</h1>
-        <button className="text-gray-400 hover:text-white flex items-center text-sm md:text-lg font-semibold lg:block hidden">
+ <Link >
+        <h1 className="text-xl md:text-2xl font-bold ml-4 uppercase hover:text-yellow-500">Pragmatic Live
+</h1>
+        </Link>        <button className="text-gray-400 hover:text-white flex items-center text-sm md:text-lg font-semibold lg:block hidden">
           View all 20
           <span className="ml-1">›</span>
         </button>

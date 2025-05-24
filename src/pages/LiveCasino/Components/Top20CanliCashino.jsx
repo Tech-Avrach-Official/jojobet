@@ -1,5 +1,14 @@
 import { useState, useEffect } from "react";
 
+import img31 from "../../../assets/gameImages/31.jpg"
+import img32 from "../../../assets/gameImages/32.jpg"
+import img33 from "../../../assets/gameImages/33.png"
+import img34 from "../../../assets/gameImages/34.jpg"
+import img35 from "../../../assets/gameImages/35.jpg"
+import img36 from "../../../assets/gameImages/36.jpg"
+import img37 from "../../../assets/gameImages/37.jpg"
+
+
 const SpecialTag = ({ text, color }) => {
   return (
     <div
@@ -179,7 +188,7 @@ const generateRandomNumbers = () => {
 };
 
 // Main grid component
-export default function TopCasino() {
+export default function Top20CanliCasino() {
   const [showAllGames, setShowAllGames] = useState(false);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -202,8 +211,7 @@ export default function TopCasino() {
     const casinoGames = [
       {
         title: "Fireball Roulette",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img31,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -211,8 +219,7 @@ export default function TopCasino() {
       },
       {
         title: "Lightning Storm",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img32,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: true,
@@ -220,8 +227,7 @@ export default function TopCasino() {
       },
       {
         title: "Türkçe Rulet",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img33,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -230,8 +236,7 @@ export default function TopCasino() {
       },
       {
         title: "Lightning Rulet",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img34,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -240,8 +245,7 @@ export default function TopCasino() {
       },
       {
         title: "Crazy Time",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img35,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -249,8 +253,7 @@ export default function TopCasino() {
       },
       {
         title: "XXXTreme",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img36,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -259,83 +262,14 @@ export default function TopCasino() {
       },
       {
         title: "Auto-Roulette",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img37,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
         showNumbers: true,
         bettingRange: "€0.1-100,000",
       },
-      {
-        title: "Lightning Roulette",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: true,
-        bettingRange: "€0.2-100,000",
-      },
-      {
-        title: "Immersive Roulette",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: true,
-        bettingRange: "€0.5-100,000",
-      },
-      {
-        title: "Crazy Balls",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: false,
-      },
-      {
-        title: "Jojo VIP BJ1",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: false,
-        seats: { total: 7, available: 4 },
-        bettingRange: "€25-100,000",
-      },
-      {
-        title: "Jojo VIP BJ2",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: false,
-        seats: { total: 7, available: 5 },
-        bettingRange: "€25-100,000",
-      },
-      {
-        title: "Türkçe Rulet",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: true,
-      },
-      {
-        title: "Türkçe Mega Rulet",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: true,
-      },
+     
     ];
 
     // Add random numbers to each game

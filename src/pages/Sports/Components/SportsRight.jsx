@@ -9,7 +9,7 @@ const SportsRight = () => {
     <div className="w-full bg-[#1E1E20]">
       <div className="text-white w-full">
         {/* Header */}
-        <div className="flex justify-between items-center bg-[#191919] py-2 px-2">
+        <div className="flex justify-between items-center bg-[#1e1e20] py-2 px-2">
           <div className="flex items-center justify-center gap-2">
             <Ticket size={18} />
             <h2 className="text-base font-medium">Betslip</h2>

@@ -1,4 +1,14 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
+
+import img41 from "../../../assets/gameImages/41.jpg"
+import img42 from "../../../assets/gameImages/42.jpg"
+import img43 from "../../../assets/gameImages/43.png"
+import img44 from "../../../assets/gameImages/44.jpg"
+import img45 from "../../../assets/gameImages/45.jpg"
+import img46 from "../../../assets/gameImages/46.jpg"
+import img47 from "../../../assets/gameImages/48.jpg"
 
 const SpecialTag = ({ text, color }) => {
   return (
@@ -179,7 +189,7 @@ const generateRandomNumbers = () => {
 };
 
 // Main grid component
-export default function TopCasino() {
+export default function CanlıOyunlar() {
   const [showAllGames, setShowAllGames] = useState(false);
   const [windowWidth, setWindowWidth] = useState(
     typeof window !== "undefined" ? window.innerWidth : 0
@@ -202,8 +212,7 @@ export default function TopCasino() {
     const casinoGames = [
       {
         title: "Fireball Roulette",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img41,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -211,8 +220,7 @@ export default function TopCasino() {
       },
       {
         title: "Lightning Storm",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img42,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: true,
@@ -220,8 +228,7 @@ export default function TopCasino() {
       },
       {
         title: "Türkçe Rulet",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img43,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -230,8 +237,7 @@ export default function TopCasino() {
       },
       {
         title: "Lightning Rulet",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img44,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -240,8 +246,7 @@ export default function TopCasino() {
       },
       {
         title: "Crazy Time",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img45,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -249,8 +254,7 @@ export default function TopCasino() {
       },
       {
         title: "XXXTreme",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img46,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -259,83 +263,14 @@ export default function TopCasino() {
       },
       {
         title: "Auto-Roulette",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        image:img47,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
         showNumbers: true,
         bettingRange: "€0.1-100,000",
       },
-      {
-        title: "Lightning Roulette",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: true,
-        bettingRange: "€0.2-100,000",
-      },
-      {
-        title: "Immersive Roulette",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: true,
-        bettingRange: "€0.5-100,000",
-      },
-      {
-        title: "Crazy Balls",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: false,
-      },
-      {
-        title: "Jojo VIP BJ1",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: false,
-        seats: { total: 7, available: 4 },
-        bettingRange: "€25-100,000",
-      },
-      {
-        title: "Jojo VIP BJ2",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: false,
-        seats: { total: 7, available: 5 },
-        bettingRange: "€25-100,000",
-      },
-      {
-        title: "Türkçe Rulet",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: true,
-      },
-      {
-        title: "Türkçe Mega Rulet",
-        image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-        specialTag: "Evolution",
-        tagColor: "bg-yellow-500",
-        isNew: false,
-        showNumbers: true,
-      },
+     
     ];
 
     // Add random numbers to each game
@@ -375,7 +310,9 @@ export default function TopCasino() {
   return (
     <div className="h-auto lg:p-8 md:p-8 p-4 bg-[#1e1e20] text-white">
       <div className="flex justify-between items-center mb-4">
-        <h1 className="text-xl md:text-2xl font-bold ml-4">TOP 20 CANLI CASINO</h1>
+<Link >
+        <h1 className="text-xl md:text-2xl font-bold ml-4 uppercase hover:text-yellow-500">Canlı Oyunlar</h1>
+        </Link>        
         <button className="text-gray-400 hover:text-white flex items-center text-sm md:text-lg font-semibold lg:block hidden">
           View all 20
           <span className="ml-1">›</span>
