@@ -10,6 +10,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import LiveSports from '@/pages/LiveSports/LiveSports'
 import LiveCashino from '@/pages/LiveCasino/LiveCasino'
+import SignupForm from '@/pages/Signup/Signup'
 
 const AllRoutes = () => {
   return (
@@ -32,6 +33,8 @@ const AllRoutes = () => {
         <Route path="/live-sports" element={<LiveSports/>} />
         <Route path='/live-casino' element={<LiveCashino/>} />
         <Route path='/live-lotto' element={<GameScreen/>} />
+        <Route path='/register' element={<SignupForm />} />
+        <Route path='/login' element={<h1>Login</h1>} />
     </Routes>
     </>
     
