@@ -7,7 +7,8 @@ import RequestDiscount from '@/pages/RequestDiscount/RequestDiscount'
 import Sports from '@/pages/Sports/Sports'
 import Tournaments from '@/pages/Tournaments/Tournaments'
 import React from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom';
+import LiveSports from '@/pages/LiveSports/LiveSports'
 
 const AllRoutes = () => {
   return (
@@ -17,6 +18,7 @@ const AllRoutes = () => {
     <Routes>
         {/* <Route path='/' element={<h1>Home</h1>} /> */}
         <Route path='/' element={<Sports/>} />
+        <Route path='/sports' element={<Sports/>} />
         <Route path='/live-games' element={<LiveGames/>} />
         <Route path="/promotions" element={<Promotion />} />
         <Route path='/aviator' element={<GameScreen/>} />
@@ -24,6 +26,7 @@ const AllRoutes = () => {
         <Route path="live-looto" element={<GameScreen/>} />
         <Route path="request-discount" element={<RequestDiscount/>} />
         <Route path="tournaments" element={<Tournaments/>} />
+        <Route path="/live-sports" element={<LiveSports/>} />
 
     </Routes>
     </>
