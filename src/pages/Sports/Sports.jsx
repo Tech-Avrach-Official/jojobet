@@ -13,7 +13,7 @@ import EGT_Digital from './Components/EgtDigital'
 const Sports = () => {
   return (
     <div>
-      <div className='hidden md:block '>
+      <div className='hidden lg:block'>
         <Navbar/>
       <SportsUi/>
       <JojobetOzel />
@@ -24,7 +24,7 @@ const Sports = () => {
       <Amusnet />
       <EGT_Digital />
       </div>
-      <div className='md:hidden'>
+      <div className='lg:hidden'>
         <Navbar/>
         <SportsMobileUi/>
       </div>

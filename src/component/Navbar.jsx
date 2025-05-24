@@ -2,6 +2,8 @@ import { FaAndroid, FaApple } from "react-icons/fa";
 import { MdLanguage } from "react-icons/md";
 import { Link } from "react-router-dom";
 import logo from "../assets/download.svg";
+import { Menu } from "lucide-react";
+import SideNavbar from "./SideNavbar";
 
 export default function Navbar() {
   const navLinks = [
@@ -19,57 +21,107 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-[rgb(35,66,9)] text-white font-sans py-4 border-b-[rgb(249,196,8)] border-b-4">
-      <div className="flex items-center justify-between px-6 py-2">
-        <div className="flex items-center pt-2">
-          <img src={logo} alt="JojoBET Logo" className="h-12 w-auto" />
-        </div>
-
-        <div className="flex items-center space-x-4">
-          {/* App icons */}
-          <div className="flex items-center space-x-2">
-            <div className="border-yellow-400 p-1 border-2 rounded-lg">
-              <FaAndroid className="text-yellow-400 text-xl" />
-            </div>
-            <div className="border-yellow-400 p-1 border-2 rounded-lg">
-              <FaApple className="text-yellow-400 text-xl" />
-            </div>
+    <nav>
+      <div className="hidden lg:block bg-[rgb(35,66,9)] text-white font-sans border-b-[rgb(249,196,8)] border-b-4">
+        <div className="flex items-center justify-between px-6">
+          <div className="w-[20%] flex items-center">
+            <img src={logo} alt="JojoBET Logo" className="w-44" />
           </div>
 
-          {/* Auth buttons */}
-          <div className="flex flex-row space-x-4 px-4 border-r-2 border-gray-600">
-            <Link to="/register">
-              <button className="bg-[rgb(249,196,8)] text-[rgb(35,66,9)] font-semibold px-3 py-1 rounded">
-                REGISTER
-              </button>
-            </Link>
-            <Link to="/login">
-              <button className="text-white font-bold">LOG IN</button>
-            </Link>
-          </div>
+          <div className="w-[80%]">
+            <div className="flex items-center justify-end py-3">
+              {/* App icons */}
+              <div className="flex items-center space-x-2">
+                <div className="border-yellow-400 p-1 border-[3px] rounded-lg">
+                  <FaAndroid className="text-yellow-400 text-2xl" />
+                </div>
+                <div className="border-yellow-400 p-1 border-[3px] rounded-lg">
+                  <FaApple className="text-yellow-400 text-2xl" />
+                </div>
+              </div>
 
-          {/* Language icon */}
-          <div className="bg-[#2e5014] p-1 rounded">
-            <MdLanguage className="text-white text-xl" />
+              {/* Auth buttons */}
+              <div className="flex flex-row gap-4 px-5  border-r-2 border-gray-600">
+                <Link to="/register">
+                  <button className="bg-[rgb(249,196,8)] text-[rgb(35,66,9)] rounded-lg text-sm font-semibold px-3 py-2">
+                    REGISTER
+                  </button>
+                </Link>
+                <Link to="/login">
+                  <button className="flex items-center justify-center text-white text-sm  font-semibold py-2">
+                    LOG IN
+                  </button>
+                </Link>
+              </div>
+
+              {/* Language icon */}
+              <div className="bg-[#2e5014] py-1 px-3 ml-5 rounded-md">
+                <MdLanguage className="text-white text-2xl" />
+              </div>
+            </div>
+            <div className="w-full flex justify-end">
+              <div className="border-t border-gray-600 w-full" />
+            </div>
+
+            <div>
+              <ul className="overflow-x-auto flex items-center justify-center gap-6 text-sm xl:text-md font-medium px-4">
+                {navLinks.map((link, index) => (
+                  <li
+                    key={index}
+                    className="border-b-4 whitespace-nowrap border-transparent hover:text-[rgb(249,196,8)] hover:border-[rgb(249,196,8)] pb-2 pt-2 transition-all duration-200"
+                  >
+                    <Link to={link.path}>{link.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="w-full flex justify-end mt-2">
-        <div className="border-t border-gray-600 w-3/4" />
-      </div>
+      {/* For Mobile */}
 
-      {/* Navigation Links */}
-      <ul className="flex justify-end space-x-6 text-md font-normal mt-2 px-4 mb-2">
-        {navLinks.map((link, index) => (
-          <li
-            key={index}
-            className="hover:text-[rgb(249,196,8)] hover:border-b-4 hover:border-[rgb(249,196,8)] pb-1 border-transparent"
-          >
-            <Link to={link.path}>{link.name}</Link>
-          </li>
-        ))}
-      </ul>
+      <div className="lg:hidden bg-[rgb(35,66,9)] text-white font-sans border-b-[rgb(249,196,8)] border-b-4">
+        <div className="flex items-center justify-between px-2">
+          <div className="flex items-center gap-3">
+            <div>
+              {/* <Menu size={34} strokeWidth={3} className="text-yellow-400 font-bold" /> */}
+              <SideNavbar/>
+            </div>
+           <div>
+             <img src={logo} alt="JojoBET Logo" className="w-28" />
+           </div>
+          </div>
+
+          <div>
+            <div className="flex items-center justify-end py-2">
+              {/* App icons */}
+              <div className="flex items-center space-x-2">
+                <div className="border-yellow-400 p-1 border-[2px] rounded-lg">
+                  <FaAndroid className="text-yellow-400 text-lg" />
+                </div>
+                <div className="border-yellow-400 p-1 border-[2px] rounded-lg">
+                  <FaApple className="text-yellow-400 text-lg" />
+                </div>
+              </div>
+
+              {/* Auth buttons */}
+              <div className="flex flex-row">
+                <Link to="/login">
+                  <button className="mx-2 flex items-center justify-center text-white text-sm  font-semibold py-2">
+                    LOG IN
+                  </button>
+                </Link>
+                <Link to="/register">
+                  <button className="bg-[rgb(249,196,8)] text-[rgb(35,66,9)] rounded-lg text-sm font-semibold px-2 py-1.5">
+                    REGISTER
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </nav>
   );
 }
