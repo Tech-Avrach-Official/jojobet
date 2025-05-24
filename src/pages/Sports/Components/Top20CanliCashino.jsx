@@ -1,4 +1,32 @@
 import { useState, useEffect } from "react";
+import img8 from '@/assets/gameImages/8.png';
+import img9 from '@/assets/gameImages/9.jpg';
+import img10 from '@/assets/gameImages/10.jpg';
+import img11 from '@/assets/gameImages/11.jpg';
+import img12 from '@/assets/gameImages/12.jpg';
+import img13 from '@/assets/gameImages/13.jpg';
+import img14 from '@/assets/gameImages/14.jpg';
+import img15 from '@/assets/gameImages/15.jpg';
+import img16 from '@/assets/gameImages/16.jpg';
+import img17 from '@/assets/gameImages/17.png';
+import img18 from '@/assets/gameImages/18.png';
+import img19 from '@/assets/gameImages/19.jpg';
+import img20 from '@/assets/gameImages/20.png';
+import img21 from '@/assets/gameImages/21.jpg';
+import img22 from '@/assets/gameImages/22.jpg';
+import img23 from '@/assets/gameImages/23.png';
+import img24 from '@/assets/gameImages/24.jpg';
+import img25 from '@/assets/gameImages/25.jpg';
+import img26 from '@/assets/gameImages/26.jpg';
+import img27 from '@/assets/gameImages/27.jpg';
+import img28 from '@/assets/gameImages/28.jpg';
+import img29 from '@/assets/gameImages/29.jpg';
+import img30 from '@/assets/gameImages/30.jpg';
+import img31 from '@/assets/gameImages/31.jpg';
+import img32 from '@/assets/gameImages/32.jpg';
+import img33 from '@/assets/gameImages/33.png';
+import img34 from '@/assets/gameImages/34.jpg';
+import img35 from '@/assets/gameImages/35.jpg';
 
 const SpecialTag = ({ text, color }) => {
   return (
@@ -203,7 +231,7 @@ export default function TopCasino() {
       {
         title: "Fireball Roulette",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img16,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -212,7 +240,7 @@ export default function TopCasino() {
       {
         title: "Lightning Storm",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img8,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: true,
@@ -221,7 +249,7 @@ export default function TopCasino() {
       {
         title: "Türkçe Rulet",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img10,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -231,7 +259,7 @@ export default function TopCasino() {
       {
         title: "Lightning Rulet",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img12,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -241,7 +269,7 @@ export default function TopCasino() {
       {
         title: "Crazy Time",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img14,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -250,7 +278,7 @@ export default function TopCasino() {
       {
         title: "XXXTreme",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img16,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -260,7 +288,7 @@ export default function TopCasino() {
       {
         title: "Auto-Roulette",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img18,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -270,7 +298,7 @@ export default function TopCasino() {
       {
         title: "Lightning Roulette",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img20,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -280,7 +308,7 @@ export default function TopCasino() {
       {
         title: "Immersive Roulette",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img22,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -290,7 +318,7 @@ export default function TopCasino() {
       {
         title: "Crazy Balls",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img24,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -299,7 +327,7 @@ export default function TopCasino() {
       {
         title: "Jojo VIP BJ1",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img26,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -310,7 +338,7 @@ export default function TopCasino() {
       {
         title: "Jojo VIP BJ2",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img28,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -321,7 +349,7 @@ export default function TopCasino() {
       {
         title: "Türkçe Rulet",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img30,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,
@@ -330,7 +358,7 @@ export default function TopCasino() {
       {
         title: "Türkçe Mega Rulet",
         image:
-          "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+          img32,
         specialTag: "Evolution",
         tagColor: "bg-yellow-500",
         isNew: false,

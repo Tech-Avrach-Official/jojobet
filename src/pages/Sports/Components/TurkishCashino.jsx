@@ -1,5 +1,19 @@
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
+import img15 from '@/assets/gameImages/15.jpg';
+import img16 from '@/assets/gameImages/16.jpg';
+import img17 from '@/assets/gameImages/17.png';
+import img18 from '@/assets/gameImages/18.png';
+import img19 from '@/assets/gameImages/19.jpg';
+import img20 from '@/assets/gameImages/20.png';
+import img21 from '@/assets/gameImages/21.jpg';
+import img22 from '@/assets/gameImages/22.jpg';
+import img23 from '@/assets/gameImages/23.png';
+import img24 from '@/assets/gameImages/24.jpg';
+import img25 from '@/assets/gameImages/25.jpg';
+import img26 from '@/assets/gameImages/26.jpg';
+import img27 from '@/assets/gameImages/27.jpg';
+import img28 from '@/assets/gameImages/28.jpg';
 
 const SeatIndicator = ({ occupied }) => {
   return (
@@ -137,21 +151,21 @@ export default function TurkishCasinoGrid() {
       betRange: "₺500-2,000,000",
       seats: [false, false, false, true, true, true],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img15,
     },
     {
       title: "Jojo VIP BJ2",
       betRange: "₺500-2,000,000",
       seats: [false, false, false, false, false, false],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img16,
     },
     {
       title: "Jojo Blackjack3",
       betRange: "₺200-2,000,000",
       seats: [true, true, true, true, true, true],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img17,
     },
     {
       title: "Jojo Blackjack4",
@@ -159,77 +173,77 @@ export default function TurkishCasinoGrid() {
       isTableFull: true,
       seats: [true, true, true, true, true, true],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img18,
     },
     {
       title: "Jojo Blackjack5",
       betRange: "₺200-2,000,000",
       seats: [false, false, true, true, true, false],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img19,
     },
     {
       title: "Jojo Blackjack6",
       betRange: "₺50-2,000,000",
       seats: [true, true, true, false, true, true],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img20,
     },
     {
       title: "Jojo Blackjack7",
       betRange: "₺50-2,000,000",
       seats: [true, false, true, true, true, true],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img21,
     },
     {
       title: "Jojo Blackjack8",
       betRange: "₺50-2,000,000",
       seats: [false, false, false, false, false, true],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img22,
     },
     {
       title: "Jojo Blackjack9",
       betRange: "₺50-2,000,000",
       seats: [false, false, true, true, false, false],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img23,
     },
     {
       title: "Jojo Blackjack10",
       betRange: "₺200-2,000,000",
       seats: [false, false, false, true, false, true],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img24,
     },
     {
       title: "Jojo Blackjack11",
       betRange: "₺100-2,000,000",
       seats: [false, false, true, false, true, false],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img25,
     },
     {
       title: "Jojo Blackjack12",
       betRange: "₺100-2,000,000",
       seats: [true, false, false, true, false, true],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img26,
     },
     {
       title: "Jojo Blackjack13",
       betRange: "₺50-2,000,000",
       seats: [false, true, false, true, true, false],
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img27,
     },
     {
       title: "Jojobet FP Blackjack",
       betRange: "",
       hasEvolution: true,
       bgImage:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img28,
     },
   ];
 

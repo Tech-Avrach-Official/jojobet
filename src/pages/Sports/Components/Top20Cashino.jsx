@@ -1,5 +1,20 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import img21 from '@/assets/gameImages/21.jpg';
+import img22 from '@/assets/gameImages/22.jpg';
+import img23 from '@/assets/gameImages/23.png';
+import img24 from '@/assets/gameImages/24.jpg';
+import img25 from '@/assets/gameImages/25.jpg';
+import img26 from '@/assets/gameImages/26.jpg';
+import img27 from '@/assets/gameImages/27.jpg';
+import img49 from '@/assets/gameImages/49.jpg';
+import img50 from '@/assets/gameImages/50.jpg';
+import img51 from '@/assets/gameImages/51.jpg';
+import img52 from '@/assets/gameImages/52.jpg';
+import img53 from '@/assets/gameImages/53.png';
+import img54 from '@/assets/gameImages/54.jpg';
+import img55 from '@/assets/gameImages/55.jpg';
+
 const SpecialTag = ({ text, color }) => {
   return (
     <div
@@ -109,7 +124,7 @@ export default function TopCasino() {
     {
       title: "Jojo Bonanza 1000",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img21,
       specialTag: "Drop & Wins",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -117,7 +132,7 @@ export default function TopCasino() {
     {
       title: "Jojo Rush 1000",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img22,
       specialTag: "Drop & Wins",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -125,7 +140,7 @@ export default function TopCasino() {
     {
       title: "Jackrabbit Jackpots",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img23,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: true,
@@ -133,7 +148,7 @@ export default function TopCasino() {
     {
       title: "Jojobet Princess 1000",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img24,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -141,7 +156,7 @@ export default function TopCasino() {
     {
       title: "Jojobet FP Blackjack",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img25,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -149,7 +164,7 @@ export default function TopCasino() {
     {
       title: "Jojobet FP Roulette",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img26,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -157,7 +172,7 @@ export default function TopCasino() {
     {
       title: "Big Bass Bonanza 1000",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img27,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -165,7 +180,7 @@ export default function TopCasino() {
     {
       title: "40 Extra Crown 6 Reels",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img49,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: true,
@@ -173,7 +188,7 @@ export default function TopCasino() {
     {
       title: "Fruit Shop",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img50,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -181,7 +196,7 @@ export default function TopCasino() {
     {
       title: "Reel Rush",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img51,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -189,7 +204,7 @@ export default function TopCasino() {
     {
       title: "Gods of Troy Megaways",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img52,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -197,7 +212,7 @@ export default function TopCasino() {
     {
       title: "Sweet Bonanza™",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img53,
       specialTag: "Drop & Wins",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -205,7 +220,7 @@ export default function TopCasino() {
     {
       title: "Gates of Jojobet",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img54,
       specialTag: "Drop & Wins",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -213,7 +228,7 @@ export default function TopCasino() {
     {
       title: "Aviator",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img55,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,

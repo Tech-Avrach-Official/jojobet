@@ -1,6 +1,35 @@
 
 import { useState } from "react";
 import PropTypes from "prop-types";
+import img8 from '@/assets/gameImages/8.png';
+import img9 from '@/assets/gameImages/9.jpg';
+import img10 from '@/assets/gameImages/10.jpg';
+import img11 from '@/assets/gameImages/11.jpg';
+import img12 from '@/assets/gameImages/12.jpg';
+import img13 from '@/assets/gameImages/13.jpg';
+import img14 from '@/assets/gameImages/14.jpg';
+import img15 from '@/assets/gameImages/15.jpg';
+import img16 from '@/assets/gameImages/16.jpg';
+import img17 from '@/assets/gameImages/17.png';
+import img18 from '@/assets/gameImages/18.png';
+import img19 from '@/assets/gameImages/19.jpg';
+import img20 from '@/assets/gameImages/20.png';
+import img21 from '@/assets/gameImages/21.jpg';
+import img22 from '@/assets/gameImages/22.jpg';
+import img23 from '@/assets/gameImages/23.png';
+import img24 from '@/assets/gameImages/24.jpg';
+import img25 from '@/assets/gameImages/25.jpg';
+import img26 from '@/assets/gameImages/26.jpg';
+import img27 from '@/assets/gameImages/27.jpg';
+import img28 from '@/assets/gameImages/28.jpg';
+import img29 from '@/assets/gameImages/29.jpg';
+import img30 from '@/assets/gameImages/30.jpg';
+import img31 from '@/assets/gameImages/31.jpg';
+import img32 from '@/assets/gameImages/32.jpg';
+import img33 from '@/assets/gameImages/33.png';
+import img34 from '@/assets/gameImages/34.jpg';
+import img35 from '@/assets/gameImages/35.jpg';
+
 const SpecialTag = ({ text, color }) => {
   return (
     <div
@@ -110,7 +139,7 @@ export default function Pregamatic() {
     {
       title: "Sweet Bonanza™",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img9,
       specialTag: "pregamaticPlay" ,
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -118,7 +147,7 @@ export default function Pregamatic() {
     {
       title: "Gates of Olympus™",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img11,
       specialTag: "pregamaticPlay" ,
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -126,7 +155,7 @@ export default function Pregamatic() {
     {
       title: "Gates of Olympus 1000",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img13,
       specialTag: "pregamaticPlay" ,
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -134,7 +163,7 @@ export default function Pregamatic() {
     {
       title: "Sweet Bonanza 1000",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img15,
       specialTag: "pregamaticPlay" ,
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -142,7 +171,7 @@ export default function Pregamatic() {
     {
       title: "Gates of Jojobet",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img17,
       specialTag: "pregamaticPlay" ,
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -150,7 +179,7 @@ export default function Pregamatic() {
     {
       title: "Jojo Bonanza",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img19,
       specialTag: "pregamaticPlay" ,
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -158,7 +187,7 @@ export default function Pregamatic() {
     {
       title: "Sugar Rush 1000",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img21,
       specialTag: "pregamaticPlay", 
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -166,7 +195,7 @@ export default function Pregamatic() {
     {
       title: "Sugar Rush",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img23,
       specialTag: "pregamaticPlay" ,
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -174,7 +203,7 @@ export default function Pregamatic() {
     {
       title: "Wealthy Frog",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img24,
       specialTag:  "pregamaticPlay" ,
           tagColor: "bg-yellow-500",
       isNew: true,
@@ -182,7 +211,7 @@ export default function Pregamatic() {
     {
       title: "Jumbo Safari",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img25,
       specialTag:  "pregamaticPlay" ,
           tagColor: "bg-yellow-500",
       isNew: true,
@@ -190,7 +219,7 @@ export default function Pregamatic() {
     {
       title: "Fishing Legend",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img27,
     specialTag:  "pregamaticPlay" ,
           tagColor: "bg-yellow-500",
       isNew: true,
@@ -198,7 +227,7 @@ export default function Pregamatic() {
     {
       title: "Lucky Monkey",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img29,
    specialTag:  "pregamaticPlay" ,
           tagColor: "bg-yellow-500",
       isNew: true,
@@ -206,7 +235,7 @@ export default function Pregamatic() {
     {
       title: "Sleeping Dragon",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img31,
     specialTag:  "pregamaticPlay" ,
           tagColor: "bg-yellow-500",
       isNew: true,
@@ -214,7 +243,7 @@ export default function Pregamatic() {
     {
       title: "Witch Heart Megaways",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img33,
    specialTag:  "pregamaticPlay" ,
           tagColor: "bg-yellow-500",
       isNew: true,

@@ -1,5 +1,19 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import img21 from '@/assets/gameImages/21.jpg';
+import img22 from '@/assets/gameImages/22.jpg';
+import img23 from '@/assets/gameImages/23.png';
+import img24 from '@/assets/gameImages/24.jpg';
+import img25 from '@/assets/gameImages/25.jpg';
+import img26 from '@/assets/gameImages/26.jpg';
+import img27 from '@/assets/gameImages/27.jpg';
+import img49 from '@/assets/gameImages/49.jpg';
+import img50 from '@/assets/gameImages/50.jpg';
+import img51 from '@/assets/gameImages/51.jpg';
+import img52 from '@/assets/gameImages/52.jpg';
+import img53 from '@/assets/gameImages/53.png';
+import img54 from '@/assets/gameImages/54.jpg';
+import img55 from '@/assets/gameImages/55.jpg';
 const SpecialTag = ({ text, color }) => {
   return (
     <div
@@ -107,116 +121,116 @@ export default function Amusnet() {
 
   const casinoGames = [
     {
-      title: "Jojo Space",
+      title: "Jojo Bonanza 1000",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
+        img21,
+      specialTag: "Drop & Wins",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Jojobet Space Roulette",
+      title: "Jojo Rush 1000",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
+        img22,
+      specialTag: "Drop & Wins",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Easter Frog Dice",
+      title: "Jackrabbit Jackpots",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
+        img23,
+      specialTag: "Evolution",
+      tagColor: "bg-yellow-500",
+      isNew: true,
+    },
+    {
+      title: "Jojobet Princess 1000",
+      image:
+        img24,
+      specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "40 Burning Hot",
+      title: "Jojobet FP Blackjack",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
+        img25,
+      specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Flaming Hot Extreme",
+      title: "Jojobet FP Roulette",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
+        img26,
+      specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
-      title: "Shining crown",
+      title: "Big Bass Bonanza 1000",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "40 Burning Hot 6 Reels",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "100 Super Hot",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "Hot Deco",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "100 Burning Hot",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
-      tagColor: "bg-yellow-500",
-      isNew: false,
-    },
-    {
-      title: "20 Golden Coins",
-      image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
+        img27,
+      specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
     },
     {
       title: "40 Extra Crown 6 Reels",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
+        img49,
+      specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: true,
     },
     {
-      title: "100 Extra Crown",
+      title: "Fruit Shop",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
+        img50,
+      specialTag: "Evolution",
       tagColor: "bg-yellow-500",
-      isNew: true,
+      isNew: false,
     },
     {
-      title: "Extra Crown Classic Dice",
+      title: "Reel Rush",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
-      specialTag: "Amusnet",
+        img51,
+      specialTag: "Evolution",
       tagColor: "bg-yellow-500",
-      isNew: true,
+      isNew: false,
+    },
+    {
+      title: "Gods of Troy Megaways",
+      image:
+        img52,
+      specialTag: "Evolution",
+      tagColor: "bg-yellow-500",
+      isNew: false,
+    },
+    {
+      title: "Sweet Bonanza™",
+      image:
+        img53,
+      specialTag: "Drop & Wins",
+      tagColor: "bg-yellow-500",
+      isNew: false,
+    },
+    {
+      title: "Gates of Jojobet",
+      image:
+        img54,
+      specialTag: "Drop & Wins",
+      tagColor: "bg-yellow-500",
+      isNew: false,
+    },
+    {
+      title: "Aviator",
+      image:
+        img55,
+      specialTag: "Evolution",
+      tagColor: "bg-yellow-500",
+      isNew: false,
     },
   ];
 

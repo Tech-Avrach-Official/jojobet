@@ -26,6 +26,8 @@ const AllRoutes = () => {
         <Route path="live-looto" element={<GameScreen/>} />
         <Route path="request-discount" element={<RequestDiscount/>} />
         <Route path="tournaments" element={<Tournaments/>} />
+        <Route path='/game-screen' element={<GameScreen/>} />
+        <Route path='/sports' element={<Sports/>} />
         <Route path="/live-sports" element={<LiveSports/>} />
 
     </Routes>

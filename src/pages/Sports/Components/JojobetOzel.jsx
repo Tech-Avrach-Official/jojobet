@@ -1,5 +1,9 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
+import img1 from '@/assets/gameImages/1.jpg';
+import img2 from '@/assets/gameImages/2.jpg';
+import img3 from '@/assets/gameImages/3.jpg';
+import img4 from '@/assets/gameImages/4.png';
 const SpecialTag = ({ text, color }) => {
   return (
     <div
@@ -109,7 +113,7 @@ export default function JojobetOzel() {
     {
       title: "Sweet Bonanza™",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+      img1,
       specialTag: "Drop & Wins",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -117,7 +121,7 @@ export default function JojobetOzel() {
     {
       title: "Gates of Olympus™",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img2,
       specialTag: "Drop & Wins",
       tagColor: "bg-yellow-500",
       isNew: false,
@@ -125,7 +129,7 @@ export default function JojobetOzel() {
     {
       title: "UFO Galaxy",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img3,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: true,
@@ -133,7 +137,7 @@ export default function JojobetOzel() {
     {
       title: "Galaxy",
       image:
-        "https://cloudcdn.owcontent.com/games/pragmaticplay/2201.jpg?221746438614000",
+        img4,
       specialTag: "Evolution",
       tagColor: "bg-yellow-500",
       isNew: false,
